@@ -58,7 +58,7 @@ app.get('/recette/:id', (req, res) => {
         .then(response => {
             const recette = response.data;
             // Envoyer la recette en tant que réponse HTTP
-            res.json(recette);
+            res.send(recette);
         })
         .catch(error => {
             console.error(error);
@@ -71,5 +71,7 @@ app.get('/recette/:id', (req, res) => {
 app.listen(3000, () => {
     console.log("Server started on port 3000");
 })
+
+
 
 
