@@ -14,7 +14,7 @@ app.post("/ajout", (req, res) => {
             headers: {
                 "Content-Type": "application/json",
                 "x-apikey": API_KEY,
-                "cache-control": "no-cache",a
+                "cache-control": "no-cache",
             },
         })
         .then(response => {
